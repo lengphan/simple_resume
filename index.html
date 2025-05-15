@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KDP Book Designer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -12,7 +12,6 @@
       --dark: #1e1e2f;
       --accent: #6366f1;
     }
-
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -27,10 +26,6 @@
       padding: 3rem 2rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-    }
     nav {
       background-color: #fff;
       border-bottom: 1px solid #ddd;
@@ -43,7 +38,6 @@
     nav a {
       color: var(--dark);
       text-decoration: none;
-      transition: color 0.3s;
     }
     nav a:hover {
       color: var(--accent);
@@ -69,12 +63,12 @@
       padding: 1rem;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s;
     }
     .portfolio-item:hover {
       transform: translateY(-5px);
     }
-    .portfolio-item img {
+    .portfolio-item img,
+    .portfolio-item embed {
       width: 100%;
       border-radius: 10px;
     }
@@ -98,19 +92,13 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
-      transition: background-color 0.3s;
     }
-    .resume-download a:hover {
-      background-color: #4f46e5;
-    }
-    form input,
-    form textarea {
+    form input, form textarea {
       width: 100%;
       padding: 0.75rem;
       margin-bottom: 1rem;
       border: 1px solid #ddd;
       border-radius: 8px;
-      font-size: 1rem;
     }
     form button {
       background-color: var(--primary);
@@ -120,10 +108,6 @@
       border-radius: 8px;
       cursor: pointer;
       font-weight: 600;
-      transition: background-color 0.3s;
-    }
-    form button:hover {
-      background-color: var(--accent);
     }
     footer {
       background-color: #1e1e2f;
@@ -145,6 +129,7 @@
     <a href="#services">Services</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#resume">Resume</a>
+    <a href="#projects">KDP Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -195,6 +180,27 @@
     <h2>Resume</h2>
     <div class="resume-download">
       <a href="your-resume.pdf" target="_blank">Download My Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>KDP Book Designs</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <embed src="Copy of 6x9 Cover (Bleed) (1) (1).pdf" type="application/pdf" width="100%" height="400px">
+        <p><strong>Incredible Riddle Book</strong><br>6x9 Cover with Bleed</p>
+        <a href="Copy of 6x9 Cover (Bleed) (1) (1).pdf" target="_blank">View Full PDF</a>
+      </div>
+      <div class="portfolio-item">
+        <embed src="Powerful Girls Coloring Book - 8.5x11 (1) (1).pdf" type="application/pdf" width="100%" height="400px">
+        <p><strong>Powerful Girls Coloring Book</strong><br>Empowerment-themed 8.5x11 activity book</p>
+        <a href="Powerful Girls Coloring Book - 8.5x11 (1) (1).pdf" target="_blank">View Full PDF</a>
+      </div>
+      <div class="portfolio-item">
+        <embed src="Ransom Note (1) (1).pdf" type="application/pdf" width="100%" height="400px">
+        <p><strong>Ransom Note</strong><br>Letters, numbers, and symbols for cutout-style projects</p>
+        <a href="Ransom Note (1) (1).pdf" target="_blank">View Full PDF</a>
+      </div>
     </div>
   </section>
 
